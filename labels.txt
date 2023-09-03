@@ -1,0 +1,20 @@
+BACKGROUND
+Bottle
+Bottle opener
+Bowl
+Coffee cup
+Countertop
+Dishwasher
+Drink
+Drinking straw
+Fork
+Juice
+Kitchen appliance
+Kitchen knife
+Kitchen utensil
+Knife
+Measuring cup
+Mixing bowl
+Mug
+Soap dispenser
+Wine glass
