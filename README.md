@@ -49,4 +49,4 @@ I hope this helped you better understand what it is my Dish Detection Program Do
 1. Add steps for running this project.
 2. Make sure to include any required libraries that need to be installed for your project to run.
 
-[View a video explanation here](video link)
+[View a video explanation here]([CODE ONLY DESCRIPTION](https://youtu.be/zc5OQhWhaa4))
