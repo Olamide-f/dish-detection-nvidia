@@ -2,7 +2,7 @@
 
 This project was made to help teens and adults alike who wish to be reminded when there are dishes in the sink. Through object detection with NVIDIA, user's can show their sink status to the camera and automatically get a message about whether or not there are dishes to be washed. From the lazy to productive and busy to time-free, this program is meant to aid people in their everyday lives.
 
-![Quick idea of program through image]([Imgur](https://imgur.com/dKE2uMp))
+![Quick idea of program through image]((https://imgur.com/dKE2uMp))
 
 ## The Algorithm
 ### OVERVIEW ~
