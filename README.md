@@ -2,11 +2,11 @@
 
 This project was made to help teens and adults alike who wish to be reminded when there are dishes in the sink. Through object detection with NVIDIA, user's can show their sink status to the camera and automatically get a message about whether or not there are dishes to be washed. From the lazy to productive and busy to time-free, this program is meant to aid people in their everyday lives.
 
-![add image descrition here](direct image link here)
+![Quick idea of program through image](https://imgur.com/qrv4v4R)
 
 ## The Algorithm
 ### OVERVIEW ~
-To detect dishes well, I retrained NVDIA's basic DetectNet with images of various dishes, utensils, bottles, coffee cups and etc and uploaded that model into my program. From there, I coded the program to output images telling users to wash their dishes when the DetectNet finds any dishes, and depending on how many dishes there are detected a user may also receive an additional pop-up reminding them.
+To detect dishes well, I retrained NVDIA's basic DetectNet with images of various dishes, utensils, bottles, coffee cups and etc and uploaded that model into my program. From there, I coded the program to output images telling users to wash their dishes when the DetectNet finds any dishes.
 
 ### Step 1: Importing Various Libraries
 The first step to creating this algorithm was importing the libraries needed to ensure I could make my detection network and use the data it gave me to accomplish my program's purpose (outputting messages about dishes). I imported jetson_inference, jetson_utils, argparse, sys, and PySimpleGUI: all various libraries which help to initialize my Detect Network (the network which makes the detection of the dishes) in a way conducive to my program purpose. For instance, jetson_utils helps to initialize the camera feed (so that the program can take into account what users' cameras are showing) and add text onto the screen, while PySimpleGUI allows for pop-up messages to be shown after most of the program has run. 
@@ -27,7 +27,6 @@ On line 40, I told the program where I was getting my camera feed from, so it co
 [Image of the code which outputs certain text depending on the detections gathered by my network](https://imgur.com/imRDs6c)
 From there, I ran a while loop which goes on for every second the live feed is still going. It states that will the live feed is going, it wants to capture an image of the current screen and run the DetectNet on the image -- looking for each object and attempting to categorize what class its in. It will then save these detections, output the nunber of detections made to the console, and run a for loop which determines if the network saw and categorized any dishes, how many dishes it saw, and output certain text based off that. This step is very important as it is what tells/alerts the user of there being dishes in their sink.
 --> If there are no dishes detected the program will output onto the screen that there are no dishes, whereas if there are ANY dishes, the program will immediately tell the user that they have dirty dishes to clean.
---> And if there are more than 2 dishes detected in the sink, users will further be prompted to clean up their sink with another pop-up reminder telling them to GO WASH THEIR DISHES!!
 
 ### Step 4: Output an Image Depending on What the Network Detected and Stopping the Program
 All this does, is update the screen users are seeing after the program has made its detections and run its output statements and continue repeating step 3 until the user ends the program.
